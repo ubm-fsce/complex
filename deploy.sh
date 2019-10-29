@@ -9,6 +9,6 @@ docker push uday1005/multi-server:123456uday
 docker push uday1005/multi-worker:123456uday
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=uday1005/multi-server:123456uday
-kubectl set image deployments/client-deployment client=uday1005/multi-clientL123456uday
+kubectl set image deployments/client-deployment client=uday1005/multi-client:123456uday
 kubectl set image deployment/worker-deployment worker=uday1005/multi-client:123456uday
 
